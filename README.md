@@ -17,3 +17,10 @@ The following tools must be installed on your machine.
 3. Start up the LocalStack container with `localstack start`
 
 4. In the `infra` directory, run `pulumi up` to provision AWS resources in the running LocalStack container
+
+# TODO
+* Add image conversion Lambda function and layer
+* Add integration test to ensure that the Lambda function produces the correct artefacts
+* Add packaging step to the Lambda function and layer to create the zip files needed for deployment
+* Add uploading step for uploading function and layer packages to s3
+* Add pulumi resources for deploying the Lambda functions and layers

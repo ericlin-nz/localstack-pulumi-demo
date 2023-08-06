@@ -1,7 +1,7 @@
 import { provisionLambdas } from "./src/lambdas";
-import { provisionVideosBucket } from "./src/buckets";
+import { provisionBuckets } from "./src/buckets";
 
 export = function (): void {
-  provisionVideosBucket();
+  provisionBuckets();
   provisionLambdas();
 }

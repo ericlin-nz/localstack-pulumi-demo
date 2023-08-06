@@ -7,12 +7,14 @@ import { envvars } from "./envvars";
 const defaultClientConfig = {
   region: envvars.AWS_REGION,
 
-  // 
+  // AWS access credentials will normally come from the AWS credentials
+  // provider rather than being set as envvars. We set them as envvars
+  // for dev only.
   ...(envvars.AWS_ACCESS_KEY_ID !== undefined && envvars.AWS_SECRET_ACCESS_KEY !== undefined
     ? {
         credentials: {
-          accessKeyId: envvars.AWS_ACCESS_KEY_ID ?? "dev",
-          secretAccessKey: envvars.AWS_SECRET_ACCESS_KEY ?? "dev"
+          accessKeyId: envvars.AWS_ACCESS_KEY_ID,
+          secretAccessKey: envvars.AWS_SECRET_ACCESS_KEY,
         }
       } 
     : {}
