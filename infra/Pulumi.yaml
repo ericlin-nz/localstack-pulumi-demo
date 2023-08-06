@@ -1,0 +1,3 @@
+name: infra
+runtime: nodejs
+description: Cloud infrastructure for testing a simple video processor

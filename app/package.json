@@ -1,0 +1,20 @@
+{
+  "name": "image-converter",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "vitest"
+  },
+  "author": "ericlinnz",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.4.8",
+    "typescript": "^5.1.6",
+    "vitest": "^0.34.1"
+  },
+  "dependencies": {
+    "@aws-sdk/client-lambda": "^3.385.0",
+    "@aws-sdk/client-s3": "^3.385.0",
+    "zod": "^3.21.4"
+  }
+}
