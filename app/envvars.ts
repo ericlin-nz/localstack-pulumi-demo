@@ -1,5 +1,5 @@
-import { z } from "zod";
 import "dotenv/config";
+import { z } from "zod";
 
 const envvarsSchema = z.object({
   AWS_REGION: z.string(),

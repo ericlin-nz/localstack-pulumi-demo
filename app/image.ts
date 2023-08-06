@@ -1,8 +1,8 @@
-import * as s3 from "@aws-sdk/client-s3";
 import * as lambda from "@aws-sdk/client-lambda"
+import * as s3 from "@aws-sdk/client-s3";
 import * as fs from "fs";
-import { IMAGES_BUCKET } from "../infra/src/buckets";
 import { envvars } from "./envvars";
+import { IMAGES_BUCKET } from "../infra/src/buckets";
 
 const defaultClientConfig = {
   region: envvars.AWS_REGION,

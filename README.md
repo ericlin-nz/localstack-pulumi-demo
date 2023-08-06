@@ -24,3 +24,4 @@ The following tools must be installed on your machine.
 * Add packaging step to the Lambda function and layer to create the zip files needed for deployment
 * Add uploading step for uploading function and layer packages to s3
 * Add pulumi resources for deploying the Lambda functions and layers
+* Add `prettier`

@@ -1,11 +1,11 @@
-import { beforeAll, describe, expect, it } from "vitest";
-import { upload } from "../image";
-import { join } from "path";
 import * as s3 from "@aws-sdk/client-s3";
+import { join } from "path";
+import { afterEach, beforeAll, describe, expect, it } from "vitest";
 import { envvars } from "../envvars";
+import { upload } from "../image";
 import { IMAGES_BUCKET } from "../../infra/src/buckets";
-import { afterEach } from "node:test";
 
+// Ensure that the LocalStack container is running before running these tests
 describe("image", () => {
   let s3Client: s3.S3Client;
 
@@ -62,7 +62,7 @@ describe("image", () => {
     });
   });
 
-  describe("process", () => {
+  // describe("process", () => {
 
-  })
+  // })
 });
